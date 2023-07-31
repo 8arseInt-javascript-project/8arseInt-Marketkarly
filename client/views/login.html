@@ -1,28 +1,26 @@
 <!doctype html>
-<html lang="ko-KR">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="아쉬워 벌써 12시" />
-    <meta name="keywords" content="칼리,마켓칼리,뷰티칼리,샛별배송,알뜰쇼핑" />
-    <meta name="description" content="마켓칼리 메인 페이지입니다." />
-    <title>칼리 - 마켓칼리</title>
+    <meta name="author" content="8arseInt" />
+    <meta
+      name="keywords"
+      content="다이어트, 식단, 닭가슴살, 요리, 치아바타, 레시피, 상차림, 다이어트음식, 이유식, 건강이유식, 뷰티, 화장품" />
+    <meta name="description" content="칼리 로그인 페이지입니다." />
+    <title>로그인 - 칼리</title>
     <link rel="shortcut icon" href="https://res.kurly.com/favicon.ico" type="res/ico" />
     <link
       rel="preload"
       as="style"
       crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/css/main.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="./js/main.js" type="module"></script>
-    <script src="./js/common/common.js" type="module"></script>
-    <script src="./lib/dom/swiper.js" type="module"></script>
+    <link rel="stylesheet" href="./../css/main.css" />
+    <script type="module" src="./../js/main.js"></script>
   </head>
 
   <body>
-    <div class="headerAllWrapper">
+    <div class="headerAllWrapper shadow-[0_4px_24px_0_rgba(0,0,0,0.10)]">
       <div class="promotion h-[3.125rem] bg-primary">
         <div
           class="promotion__wrapper container__width relative flex h-full items-center justify-center">
@@ -39,17 +37,6 @@
           </button>
         </div>
       </div>
-
-      <div class="popupWrapper w-[440px] h-[672px] fixed top-[140px] right-1/2 rounded-[16px] shadow-[0px_1px_6px_0px_rgba(0,0,0,0.3)] translate-x-[50%] z-[100] cursor-pointer bg-white" id="confirm">
-          <a href="#">
-            <img src="./assets/images/modal/main-modal.jpg" alt="뷰티컬리 팝업창" class="rounded-[16px_16px_0_0]"/>
-          </a>
-          <div class="popupButton flex">
-            <button class="closeOneday w-[220px] h-[86px] border-r border-[#e1e1e1]" id="close-oneday">오늘 하루 안 보기</button>
-            <button class="popupClose w-[220px] h-[86px]">닫기</button>
-          </div>
-      </div>
-
       <div class="headerWrapper container__width relative">
         <header class="header">
           <h1 class="a11y sr-only">칼리</h1>
@@ -71,11 +58,11 @@
           <div class="memberOnly container__width text-sm">
             <ul class="memberOnly__wrapper absolute right-0 top-[0.75rem] flex justify-end">
               <li>
-                <a href="./views/sign-up.html" class="text-primary">회원가입</a>
+                <a href="./sign-up.html" class="text-primary">회원가입</a>
               </li>
               <li>
                 <span class="divider text-gray-400" aria-hidden="true">ㅣ</span>
-                <a href="./views/login.html">로그인</a>
+                <a href="./login.html">로그인</a>
               </li>
               <li>
                 <span class="divider text-gray-400" aria-hidden="true">ㅣ</span>
@@ -134,7 +121,8 @@
             <div class="menu flex__between">
               <div class="menu__button pt-2">
                 <h2>
-                  <button class="menu__button__category menu__listStyle hover:category__titleStyle">
+                  <button
+                    class="menu__button__category menu__listStyle hover:underline-offset-2hover:text-primary hover:text-primary hover:underline hover:underline-offset-2">
                     <img
                       src="/assets/images/header/Hamburger.svg"
                       alt=""
@@ -142,8 +130,8 @@
                     카테고리
                   </button>
                 </h2>
-                <ul class="category category__hidden absolute top-[199px] hidden">
-                  <li class="category__list category__listTitle hover: hover:category__hover">
+                <ul class="category category__hidden absolute top-48 hidden">
+                  <li class="category__list category__listTitle">
                     <div class="category__img category__imgStyle">
                       <img src="/assets/images/header/navGift.png" alt="선물" />
                     </div>
@@ -151,14 +139,14 @@
                     <a href="#" class="category__link text-base">선물하기</a>
                   </li>
 
-                  <li class="category__list category__listTitle hover:category__hover">
+                  <li class="category__list category__listTitle">
                     <div class="category__img category__imgStyle">
                       <img src="/assets/images/header/navVegetable.png" alt="채소" />
                     </div>
                     <span class="sprite sprite__vegetable"></span>
                     <a href="#" class="category__link text-base">채소</a>
                   </li>
-                  <li class="category__list category__listTitle hover:category__hover">
+                  <li class="category__list category__listTitle">
                     <div class="category__img category__imgStyle">
                       <img src="/assets/images/header/navFruit.png" alt="과일, 견과, 쌀" />
                     </div>
@@ -167,7 +155,7 @@
                     <a href="#" class="category__link text-base"> 과일&bull;견과&bull;쌀 </a>
                   </li>
 
-                  <li class="category__list category__listTitle hover:category__hover">
+                  <li class="category__list category__listTitle">
                     <div class="category__img category__imgStyle">
                       <img src="/assets/images/header/navFish.png" alt="수산, 해산, 건어물" />
                     </div>
@@ -175,14 +163,14 @@
                     <a href="#" class="category__link text-base"> 수산&bull;해산&bull;건어물 </a>
                   </li>
 
-                  <li class="category__list category__listTitle hover:category__hover">
+                  <li class="category__list category__listTitle">
                     <div class="category__img category__imgStyle">
                       <img src="/assets/images/header/navMeat.png" alt="정육, 계란" />
                     </div>
                     <span class="sprite sprite__meat"></span>
                     <a href="#" class="category__link text-base">정육&bull;계란</a>
                   </li>
-                  <li class="category__list category__listTitle hover:category__hover">
+                  <li class="category__list category__listTitle">
                     <div class="category__img category__imgStyle">
                       <img src="/assets/images/header/navMaindish.png" alt="국, 반찬, 메인요리" />
                     </div>
@@ -190,7 +178,7 @@
                     <a href="#" class="category__link text-base"> 국&bull;반찬&bull;메인요리 </a>
                   </li>
 
-                  <li class="category__list category__listTitle hover:category__hover">
+                  <li class="category__list category__listTitle">
                     <div class="category__img category__imgStyle">
                       <img src="/assets/images/header/navSalad.png" alt="샐러드, 간편식" />
                     </div>
@@ -198,7 +186,7 @@
                     <a href="#" class="category__link text-base">샐러드&bull;간편식</a>
                   </li>
 
-                  <li class="category__list category__listTitle hover:category__hover">
+                  <li class="category__list category__listTitle">
                     <div class="category__img category__imgStyle">
                       <img src="/assets/images/header/navSpice.png" alt="면, 양념, 오일" />
                     </div>
@@ -207,7 +195,7 @@
                       면&bull;양념&bull;오일
                     </a>
                   </li>
-                  <li class="category__list category__listTitle hover:category__hover">
+                  <li class="category__list category__listTitle">
                     <div class="category__img category__imgStyle">
                       <img src="/assets/images/header/navDrink.png" alt="생수, 음료, 우유, 커피" />
                     </div>
@@ -217,14 +205,14 @@
                     </a>
                   </li>
 
-                  <li class="category__list category__listTitle hover:category__hover">
+                  <li class="category__list category__listTitle">
                     <div class="category__img category__imgStyle">
                       <img src="/assets/images/header/navDessert.png" alt="간식, 과자, 떡" />
                     </div>
                     <span class="sprite sprite__snack"></span>
                     <a href="#" class="category__link text-base"> 간식&bull;과자&bull;떡 </a>
                   </li>
-                  <li class="category__list category__listTitle hover:category__hover">
+                  <li class="category__list category__listTitle">
                     <div class="category__img category__imgStyle">
                       <img src="/assets/images/header/navBread.png" alt="베이커리, 치즈, 델리" />
                     </div>
@@ -232,7 +220,7 @@
                     <a href="#" class="category__link text-base"> 베이커리&bull;치즈&bull;델리 </a>
                   </li>
 
-                  <li class="category__list category__listTitle hover:category__hover">
+                  <li class="category__list category__listTitle">
                     <div class="category__img category__imgStyle">
                       <img src="/assets/images/header/navHealth.png" alt="건강 식품" />
                     </div>
@@ -240,7 +228,7 @@
                     <a href="#" class="category__link text-base">건강식품</a>
                   </li>
 
-                  <li class="category__list category__listTitle hover:category__hover">
+                  <li class="category__list category__listTitle">
                     <div class="category__img category__imgStyle">
                       <img src="/assets/images/header/navWine.png" alt="와인" />
                     </div>
@@ -248,7 +236,7 @@
                     <a href="#" class="category__link text-base">와인</a>
                   </li>
 
-                  <li class="category__list category__listTitle hover:category__hover">
+                  <li class="category__list category__listTitle">
                     <div class="category__img category__imgStyle">
                       <img src="/assets/images/header/navTraditionalDrink.png" alt="전통주" />
                     </div>
@@ -256,7 +244,7 @@
                     <a href="#" class="category__link text-base">전통주</a>
                   </li>
 
-                  <li class="category__list category__listTitle hover:category__hover">
+                  <li class="category__list category__listTitle">
                     <div class="category__img category__imgStyle">
                       <img src="/assets/images/header/navLiving.png" alt="생활용품, 리빙, 캠핑" />
                     </div>
@@ -264,14 +252,14 @@
                     <a href="#" class="category__link text-base"> 생활용품&bull;리빙&bull;캠핑 </a>
                   </li>
 
-                  <li class="category__list category__listTitle hover:category__hover">
+                  <li class="category__list category__listTitle">
                     <div class="category__img category__imgStyle">
                       <img src="/assets/images/header/navBeauty.png" alt="스킨케어, 메이크업" />
                     </div>
                     <span class="sprite sprite__skin"></span>
                     <a href="#" class="category__link text-base"> 스킨케어&bull;메이크업 </a>
                   </li>
-                  <li class="category__list category__listTitle hover:category__hover">
+                  <li class="category__list category__listTitle">
                     <div class="category__img category__imgStyle">
                       <img src="/assets/images/header/navBody.png" alt="헤어, 바디, 구강" />
                     </div>
@@ -279,35 +267,35 @@
                     <a href="#" class="category__link text-base"> 헤어&bull;바디&bull;구강 </a>
                   </li>
 
-                  <li class="category__list category__listTitle hover:category__hover">
+                  <li class="category__list category__listTitle">
                     <div class="category__img category__imgStyle">
                       <img src="/assets/images/header/navKitchen.png" alt="주방용품" />
                     </div>
                     <span class="sprite sprite__kitchen"></span>
                     <a href="#" class="category__link text-base">주방용품</a>
                   </li>
-                  <li class="category__list category__listTitle hover:category__hover">
+                  <li class="category__list category__listTitle">
                     <div class="category__img category__imgStyle">
                       <img src="/assets/images/header/navHomeAppliances.png" alt="가전제품" />
                     </div>
                     <span class="sprite sprite__appliances"></span>
                     <a href="#" class="category__link text-base">가전제품</a>
                   </li>
-                  <li class="category__list category__listTitle hover:category__hover">
+                  <li class="category__list category__listTitle">
                     <div class="category__img category__imgStyle">
                       <img src="/assets/images/header/navPet.png" alt="반려동물" />
                     </div>
                     <span class="sprite sprite__pet"></span>
                     <a href="#" class="category__link text-base">반려동물</a>
                   </li>
-                  <li class="category__list category__listTitle hover:category__hover">
+                  <li class="category__list category__listTitle">
                     <div class="category__img category__imgStyle">
                       <img src="/assets/images/header/navBaby.png" alt="베이비, 키즈, 완구" />
                     </div>
                     <span class="sprite sprite__baby"></span>
                     <a href="#" class="category__link text-base"> 베이비&bull;키즈&bull;완구 </a>
                   </li>
-                  <li class="category__list category__listTitle hover:category__hover">
+                  <li class="category__list category__listTitle">
                     <div class="category__img category__imgStyle">
                       <img src="/assets/images/header/navTrip.png" alt="여행, 티켓" />
                     </div>
@@ -319,24 +307,30 @@
               <h2 class="a11y sr-only">메뉴</h2>
               <ul class="menu__list flex gap-[6.75rem] pt-2">
                 <li class="menu__item">
-                  <a href="/" class="menu__link menu__listStyle hover:category__titleStyle">
+                  <a
+                    href="/"
+                    class="menu__link menu__listStyle hover:text-primary hover:underline hover:underline-offset-2">
                     신상품
                   </a>
                 </li>
                 <li class="menu__item">
                   <a
                     href="/views/product-list.html"
-                    class="menu__link menu__listStyle hover:category__titleStyle">
+                    class="menu__link menu__listStyle hover:text-primary hover:underline hover:underline-offset-2">
                     베스트
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a href="/" class="menu__link menu__listStyle hover:category__titleStyle">
+                  <a
+                    href="/"
+                    class="menu__link menu__listStyle hover:text-primary hover:underline hover:underline-offset-2">
                     알뜰쇼핑
                   </a>
                 </li>
                 <li class="menu__item">
-                  <a href="/" class="menu__link menu__listStyle hover:category__titleStyle">
+                  <a
+                    href="/"
+                    class="menu__link menu__listStyle hover:text-primary hover:underline hover:underline-offset-2">
                     특가/혜택
                   </a>
                 </li>
@@ -353,61 +347,44 @@
         </header>
       </div>
     </div>
-
-    <div class="banner__slider relative -z-0 mx-auto h-[370px] w-[1920px] overflow-hidden">
-      <div class="swiper-wrapper"></div>
-      <div class="swiper-button-prev h-[50px] w-[50px]"></div>
-      <div class="swiper-button-next h-[50px] w-[50px]"></div>
-    </div>
-    <h2 class="productTitle pb-[28px] pt-[40px] text-center text-[26px] font-bold">
-      이 상품 어때요?
-    </h2>
-
-    <div class="recommend__slider relative -z-0 mx-auto h-[530px] w-[1050px] overflow-hidden">
-      <div class="swiper-wrapper relative"></div>
-      <div
-        class="swiper-button-prev recommend__button__prev recommend__buttonhidden h-[55px] w-[55px]"></div>
-      <div class="swiper-button-next recommend__button__next h-[55px] w-[55px]"></div>
-    </div>
-
-    <section class="side__banner container__width">
-      <figure>
-        <a href="/">
-          <img
-            src="./assets/images/main/banner04.jpg"
-            alt="더 풍성해진 10월의 퍼플워크"
-            class="side__bannerImg my-10 block" />
-        </a>
-      </figure>
-    </section>
-
-    <!-- <main>
-      <h2 class="productTitle">이 상품 어때요?</h2>
-      <section class="product">
-        <div class="product__wrapper">
-          <a href="/views/product-detail.html">
-            <figure class="product__item">
-              <img
-                src="/assets/product/tangtang/thumbnail.svg"
-                alt=""
-                aria-labelledby="productTangtang"
-                class="product__img" />
-              <figcaption class="product__caption">
-                <h3 class="a11y">[풀무원] 탱탱쫄면(4개입)</h3>
-                <dl>
-                  <dt class="a11y">상품명</dt>
-                  <dd id="productTangtang" class="product__name">[풀무원] 탱탱쫄면(4개입)</dd>
-                  <dt class="a11y">가격</dt>
-                  <dd class="product__price">4,980원</dd>
-                </dl>
-              </figcaption>
-            </figure>
-          </a>
-          <button type="button" title="장바구니에 담기" class="accentCart"></button>
-        </div>
-      </section>
-    </main> -->
-
+    <main class="mx-auto mt-20 w-container">
+      <h2 class="mb-11 text-center text-lg font-semibold">로그인</h2>
+      <form action="">
+        <fieldset>
+          <legend class="sr-only">로그인 폼</legend>
+          <div class="mx-auto w-[340px]">
+            <div class="mb-3 w-full">
+              <label for="userEmail" class="sr-only">아이디</label>
+              <input type="email" id="userEmail" required placeholder="아이디를 입력해주세요."
+                class="w-full rounded border border-[#A6A6A6] px-5 py-3 outline-none placeholder:text-[#898989] focus:border-content" />
+              <p class="error-message text-error">아이디는 이메일 형식으로 입력해주세요.</p>
+            </div>
+            <div class="mb-3 w-full">
+              <label for="userPassword" class="sr-only">비밀번호</label>
+              <input
+                type="password"
+                id="userPassword"
+                placeholder="비밀번호를 입력해주세요."
+                class="w-full rounded border border-[#A6A6A6] px-5 py-3 outline-none placeholder:text-[#898989] focus:border-content" />
+              <p class="error-message text-error">비밀번호는 특수문자 포함 6자 ~ 16자입니다.</p>
+            </div>
+            <div class="mb-7 text-right text-sm">
+              <span><a href="">아이디 찾기</a></span>
+              <span aria-hidden="true">|</span>
+              <span><a href="">비밀번호 찾기</a></span>
+            </div>
+            <button class="btn-login mb-3 block w-full rounded bg-primary py-[15px] font-semibold text-white">
+              로그인
+            </button>
+            <a
+              href="./sign-up.html"
+              class="mb-20 block w-full rounded border border-primary py-[15px] text-center font-semibold text-primary">
+              회원가입
+            </a>
+          </div>
+        </fieldset>
+      </form>
+    </main>
     <footer class="footer">
       <div class="footer__inner container__width mx-auto mt-[4.1875rem]">
         <div class="footer__innerTop mb-8 mt-[2.392857142857143rem] flex justify-between">
