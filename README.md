@@ -1,11 +1,10 @@
 # [🦁FE 6기] Like Lion JavaScript Project 8- Market Karly&nbsp;🛒
 <p align="center">
-<img src="https://github.com/ingbin-git/LikeLionProject-Team12/assets/128195013/63a1811c-06e4-4389-8172-06530e8b2d20" width="500px"/></p>
-
+<img src="https://github.com/8arseInt-javascript-project/8arseInt-Marketkarly/assets/101159509/f026fab4-33dd-412b-a5e4-e582d428444c" width="500px"/></p>
 
 ## &nbsp;멋쟁이사자처럼 프로젝트 8조(8arseInt)&nbsp;
 <p align="center">
-<img src="https://github.com/8arseInt-javascript-project/8arseInt-Marketkarly/assets/115642699/7fad55d7-175e-4983-8cb5-df1acc4ca827" width ="300px"/></p>
+<img src="https://github.com/8arseInt-javascript-project/8arseInt-Marketkarly/assets/101159509/c2258ea2-2a4c-4954-8afb-19eb64d95860" width ="300px"/></p>
 
 > 프로젝트 기간 : 2023년 7월 28일 ~ 2023년 8월 02일
 
